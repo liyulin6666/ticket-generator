@@ -10,6 +10,7 @@ import QrcodeVue from "qrcode.vue";
 
 // 根据环境判断二维码内容
 const url = import.meta.env.PROD
-  ? "https://ticket-generator-flame-two.vercel.app/ticket" // Vercel 公网 URL
-  : window.location.origin + "/ticket"; // 本地开发使用本地 URL
+  ? "https://ticket-generator-flame-two.vercel.app"
+  : window.location.origin;
+
 </script>
